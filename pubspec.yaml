@@ -1,6 +1,6 @@
 name: logs_vault
-description: A new Flutter package project.
-version: 0.0.1
+description: A Flutter package for seamless logging and storage of application logs into a database
+version: 0.0.2
 homepage: https://github.com/ahmeedev/logs_vault
 
 environment:

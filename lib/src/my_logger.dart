@@ -1,9 +1,9 @@
-import 'package:intl/intl.dart';
 import 'package:isar/isar.dart';
 import 'package:logger/logger.dart';
 import 'package:logging/logging.dart' as logging;
 
 import '../schemes/logs_vault.dart';
+import 'helpers.dart';
 
 /// A class to provide logging support for your application. set [useDB] to true if you want to store logs in local storage.
 
@@ -60,7 +60,7 @@ class MyLogger {
       log.dateTime = record.time;
 
       final logCollection = LogsVault();
-      logCollection.id = _getCurrentDate();
+      logCollection.id = getCurrentDate();
       logCollection.logs.add(log);
 
       await isar.writeTxn(() async {
@@ -92,10 +92,5 @@ class MyLogger {
         record.message,
       );
     }
-  }
-
-  String _getCurrentDate() {
-    final date = DateTime.now();
-    return DateFormat('yyyy-MM-dd').format(date);
   }
 }

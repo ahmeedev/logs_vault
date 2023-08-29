@@ -1,4 +1,8 @@
-## 0.0.1
+# 0.0.2
+
+Added Export log feature
+
+# 0.0.1
 
 Initial release of Logs_Vault Flutter package.
 

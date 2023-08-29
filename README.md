@@ -63,6 +63,6 @@ exportLogVault(isarObj: isar,fileLocation:"yourLocation\vault.txt");
 ~~~
 
 Here is the exported log file
-![Export Template](image.png)
+<img src="https://raw.githubusercontent.com/ahmeedev/logs_vault/main/image.png">
 
 ## Thank You For Reading this far :)

@@ -60,11 +60,7 @@ class MyApp extends StatelessWidget {
                     String? outputFile = await FilePicker.platform.saveFile(
                         dialogTitle: 'Save Your File to desired location',
                         fileName: "logsVault.txt");
-                    // log("$outputFile");
-                    exportLogVault(
-                        isarObj: isar,
-                        fileLocation:
-                            r"C:\Users\ahmeedev\Desktop\logsVault.txt");
+                    exportLogVault(isarObj: isar, fileLocation: "$outputFile");
                   },
                   child: const Padding(
                     padding: EdgeInsets.all(16),

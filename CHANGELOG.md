@@ -1,3 +1,11 @@
+# 0.0.5
+
+Fixed lint rules
+
+# 0.0.4
+
+Added Logs Stream for cross-platform logging support
+
 # 0.0.3
 
 Removed print statements

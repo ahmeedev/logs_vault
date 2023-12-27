@@ -1,4 +1,3 @@
-import 'dart:developer';
 import 'dart:io';
 
 import 'package:isar/isar.dart';
@@ -33,7 +32,6 @@ exportLogVault({required Isar isarObj, required String fileLocation}) async {
     List<Log> listOfLogs = element.logs.toList();
 
     for (var element in listOfLogs) {
-      log(element.message.toString());
       await file.writeString(
           "${getCurrentDayAndTime(element.dateTime!)} [${element.level}] : ${element.message}\n");
     }

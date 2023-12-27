@@ -1,3 +1,7 @@
+# 0.0.3
+
+Removed print statements
+
 # 0.0.2
 
 Added Export log feature
